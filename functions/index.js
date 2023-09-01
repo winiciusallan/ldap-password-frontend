@@ -74,7 +74,7 @@ const validateFirebaseIdToken = async (req, res, next) => {
 let postCall = async (body) => {
   body['key'] = `${process.env.KEY}`
   console.log("sending call...")
-  const response = await fetch('https://sad.splab.ufcg.edu.br:8081/reset_password', {method: 'POST', body: JSON.stringify(body)}).catch(err => console.error(err))
+  const response = await fetch('localhost:5001/reset_password', {method: 'POST', body: JSON.stringify(body)}).catch(err => console.error(err))
   const data = await response.json()
   console.log("Call result: " + response.status)
   return data

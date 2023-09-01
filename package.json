@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "dialog-polyfill": "^0.5.6",
-    "firebase": "^9.10.0",
+    "firebase": "^9.23.0",
     "firebaseui": "^6.0.1",
     "js-cookie": "^3.0.1",
     "next": "12.3.1",
